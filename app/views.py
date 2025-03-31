@@ -22,3 +22,12 @@ def automate_insulin_injection(request):
         'message': 'Insulin injection automated'
     }
     return JsonResponse(data)
+
+# filepath: c:\Users\tachf\NEUROAPP\NeuroGlucose\app\views.py
+from django.shortcuts import render
+
+def about(request):
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')
